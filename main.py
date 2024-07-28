@@ -4,7 +4,7 @@ import mysql.connector
 db = mysql.connector.connect(
   host="localhost",
   user="root",
-  password="aksCODING12"
+  password="***"
 )
 
 #create database and user table
@@ -49,7 +49,7 @@ while(flag==0):
 #Cycle Info from host and travel details from user
 flag=0
 mycursor.execute("create table if NOT exists cycle_info (cycleNO int, cycleColour varchar(255), cycleType varchar(255))")
-mycursor.execute("create table if NOT exists rent_info ()")
+#mycursor.execute("create table if NOT exists rent_info ()")
 while flag==0:
     usertype=input("\nEnter 1 for host and 2 for user")
 
